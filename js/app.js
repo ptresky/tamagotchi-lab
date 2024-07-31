@@ -27,11 +27,36 @@ const sleepBtnEl = document.querySelector('#sleep')
 const gameMessageEl = document.querySelector('#message')
 const resetBtnEl = document.querySelector('#restart')
 
-console.log({boredomStatEl, hungerStatEl, sleepinessStatEl, playBtnEl, feedBtnEl, sleepBtnEl, gameMessageEl, resetBtnEl})
+// console.log({
+//     boredomStatEl, 
+//     hungerStatEl, 
+//     sleepinessStatEl, 
+//     playBtnEl, 
+//     feedBtnEl, 
+//     sleepBtnEl, 
+//     gameMessageEl, 
+//     resetBtnEl
+// })
 /*-------------------------------- Functions --------------------------------*/
 
+// upon loading our app.js script
+init() // the function call 
 
+// function declaration are going to go here
+function init () {
+console.log("init working")
+    gameOver = false;
+    timer = setInterval(runGame, 20000)
+    render()
+}
 
+function runGame() {
+    console.log("game running")
+}
+
+function render(){
+    console.log("content rendering")
+}
 /*----------------------------- Event Listeners -----------------------------*/
 
 
