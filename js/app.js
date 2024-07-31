@@ -46,16 +46,29 @@ init() // the function call
 function init () {
 console.log("init working")
     gameOver = false;
-    timer = setInterval(runGame, 20000)
+    timer = setInterval(runGame, 2000)
     render()
 }
 
 function runGame() {
-    console.log("game running")
+    // console.log("game running")
+    updateStates()
 }
 
 function render(){
     console.log("content rendering")
+}
+
+function updateStates() {
+    // we need to target the global state properties
+    state.boredom += randomInt()
+    state.hunger += randomInt()
+    state.sleepiness += randomInt()
+    console.log(state)
+}
+
+function randomInt() {
+    return Math.floor(Math.random() * 4)
 }
 /*----------------------------- Event Listeners -----------------------------*/
 
